@@ -114,3 +114,33 @@ console.log(Object.entries(regularUser));
 // property checker
 
 console.log(Object.hasOwnProperty('fullname')); // false
+
+/* Object De-strtucture */ // very usefull in reactjs
+
+const course = {
+    course_name : "JS",
+    price : "14 $",
+    courseIntructor : "yash"
+}
+
+const {courseIntructor : cI} = course;
+console.log(cI); // yash
+console.log(course); 
+/*
+{ course_name: 'JS', price: '14 $', courseIntructor: 'yash' }
+*/
+
+// JSON
+
+/*
+{
+    "name" : "JS",
+    "price" : "14 $",
+    "instuctor" : "yash"
+}
+*/
+
+// more ideas https://api.github.com/users/hiteshchoudhary
+
+// for understanding what data inside in api use JSON formatter tool "https://jsonformatter.org/"
+
